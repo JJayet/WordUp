@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface JJViewController : UIViewController {
+    CGFloat reducedSize;
+
     UIView *selectedView;
     IBOutlet UIView *mainView;
     IBOutlet UIView *firstView;
