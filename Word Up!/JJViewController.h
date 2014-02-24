@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJViewController : UIViewController
+@interface JJViewController : UIViewController {
+    UIView *selectedView;
+    IBOutlet UIView *mainView;
+    IBOutlet UIView *firstView;
+    IBOutlet UIView *secondView;
+    IBOutlet UIView *thirdView;
+}
 
 @end

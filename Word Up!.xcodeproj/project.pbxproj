@@ -475,6 +475,7 @@
 				F160CDE718BAB2F3005E22DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F160CDE818BAB2F3005E22DA /* Build configuration list for PBXNativeTarget "Word Up!Tests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				F160CDEA18BAB2F3005E22DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
