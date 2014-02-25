@@ -13,10 +13,10 @@
     CGFloat reducedSize;
 
     UIView *selectedView;
-    IBOutlet UIView *mainView;
-    IBOutlet UIView *firstView;
-    IBOutlet UIView *secondView;
-    IBOutlet UIView *thirdView;
+    IBOutlet UIView *translatorView;
+    IBOutlet UIView *voiceView;
+    IBOutlet UIView *ocrView;
+    IBOutlet UIView *settingsView;
 }
 
 @end

@@ -7,7 +7,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="JJViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5TO-Mb-y4s"/>
@@ -53,12 +52,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="firstView" destination="inh-Je-l3x" id="Bl5-P0-DzS"/>
-                        <outlet property="mainView" destination="lQd-Wd-XO6" id="zKN-au-nJZ"/>
-                        <outlet property="secondView" destination="2jx-mb-Vv3" id="714-dU-xaa"/>
-                        <outlet property="thirdView" destination="GRh-dd-pep" id="RGo-kX-MtZ"/>
+                        <outlet property="ocrView" destination="2jx-mb-Vv3" id="toG-p9-7r5"/>
+                        <outlet property="settingsView" destination="GRh-dd-pep" id="AER-Fb-vxE"/>
+                        <outlet property="translatorView" destination="lQd-Wd-XO6" id="1j4-oK-PfN"/>
+                        <outlet property="voiceView" destination="inh-Je-l3x" id="Q7q-4W-UoQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="-12"/>
         </scene>
@@ -109,7 +109,7 @@
         <!--View Controller-->
         <scene sceneID="Jco-Yu-eVV">
             <objects>
-                <viewController id="Cba-FW-2Cb" sceneMemberID="viewController">
+                <viewController id="Cba-FW-2Cb" customClass="JJOCRViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9HP-I5-3eL"/>
                         <viewControllerLayoutGuide type="bottom" id="6wf-js-84K"/>
@@ -118,16 +118,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.11684455389338488" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="OCR">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAO-EH-UFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1305" y="19"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="Mmd-D7-XvQ">
             <objects>
-                <viewController id="d6j-Rn-83r" sceneMemberID="viewController">
+                <viewController id="d6j-Rn-83r" customClass="JJSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BUL-kz-QLf"/>
                         <viewControllerLayoutGuide type="bottom" id="N0T-NK-uuX"/>
@@ -136,6 +139,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="0.94486578027334855" blue="0.064689091042871238" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Settings">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq4-5K-rSc" userLabel="First Responder" sceneMemberID="firstResponder"/>

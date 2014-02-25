@@ -9,6 +9,8 @@
 #import "JJViewController.h"
 #import "JJTranslatorViewController.h"
 #import "JJVocalViewController.h"
+#import "JJOCRViewController.h"
+#import "JJSettingsViewController.h"
 
 #define DEGREES_TO_RADIANS(x) (M_PI * (x) / 180.0)
 
@@ -22,29 +24,36 @@
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willAttendForTouchNotications:) name:@"TouchNotificationHasArrived" object:nil];
 
-    [mainView setTag:1];
-    [firstView setTag:2];
-    [secondView setTag:3];
-    [thirdView setTag:4];
+    [translatorView setTag:1];
+    [voiceView setTag:2];
+    [ocrView setTag:3];
+    [settingsView setTag:4];
     reducedSize = 50.0;
-    selectedView = mainView;
+    selectedView = translatorView;
     [super viewDidLoad];
 }
 
 -(void)willAttendForTouchNotications:(NSNotification *)notification {
     if ([[notification object] isKindOfClass:[JJTranslatorViewController class]]) {
-        [self changeSelectedView:mainView];
+        [self changeSelectedView:translatorView];
     }
     else if ([[notification object] isKindOfClass:[JJVocalViewController class]]) {
-        [self changeSelectedView:firstView];
+        [self changeSelectedView:voiceView];
     }
+    else if ([[notification object] isKindOfClass:[JJOCRViewController class]]) {
+        [self changeSelectedView:ocrView];
+    }
+    else if ([[notification object] isKindOfClass:[JJSettingsViewController class]]) {
+        [self changeSelectedView:settingsView];
+    }
+
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self addLabelForView:mainView withAlpha:0];
-    [self addLabelForView:firstView withAlpha:1];
-    [self addLabelForView:secondView withAlpha:1];
-    [self addLabelForView:thirdView withAlpha:1];
+    [self addLabelForView:translatorView withAlpha:0];
+    [self addLabelForView:voiceView withAlpha:1];
+    [self addLabelForView:ocrView withAlpha:1];
+    [self addLabelForView:settingsView withAlpha:1];
     [super viewWillAppear:animated];
 }
 
