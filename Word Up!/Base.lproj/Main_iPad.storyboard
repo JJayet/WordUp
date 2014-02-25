@@ -7,6 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="JJViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5TO-Mb-y4s"/>
@@ -16,42 +17,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlU-EY-jXT" userLabel="MainView">
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQd-Wd-XO6">
                                 <rect key="frame" x="0.0" y="20" width="768" height="854"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.98561767254317811" green="0.15790427983223065" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Translator"/>
-                            </view>
-                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJT-IU-iA3" userLabel="FirstView">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="7vC-Gn-1YP" kind="embed" id="wvO-MH-XLK"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inh-Je-l3x">
                                 <rect key="frame" x="0.0" y="874" width="768" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.035351606610000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Voice"/>
-                            </view>
-                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xuk-fN-PTn" userLabel="SecondView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="PEy-nb-TaL" kind="embed" id="zzG-1D-4ai"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jx-mb-Vv3">
                                 <rect key="frame" x="0.0" y="924" width="768" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.13331220739999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="OCR"/>
-                            </view>
-                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXW-I6-gxe" userLabel="ThirdView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Cba-FW-2Cb" kind="embed" id="OfI-Rm-htv"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GRh-dd-pep">
                                 <rect key="frame" x="0.0" y="974" width="768" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.14250775490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="Settings"/>
-                            </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="d6j-Rn-83r" kind="embed" id="eF8-jA-qU9"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="firstView" destination="jJT-IU-iA3" id="LLS-xE-Jy7"/>
-                        <outlet property="mainView" destination="AlU-EY-jXT" id="7DA-Dq-mI2"/>
-                        <outlet property="secondView" destination="xuk-fN-PTn" id="U7F-Cf-kb9"/>
-                        <outlet property="thirdView" destination="NXW-I6-gxe" id="JSH-Fl-Lu0"/>
+                        <outlet property="firstView" destination="inh-Je-l3x" id="Bl5-P0-DzS"/>
+                        <outlet property="mainView" destination="lQd-Wd-XO6" id="zKN-au-nJZ"/>
+                        <outlet property="secondView" destination="2jx-mb-Vv3" id="714-dU-xaa"/>
+                        <outlet property="thirdView" destination="GRh-dd-pep" id="RGo-kX-MtZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="74" y="-12"/>
+        </scene>
+        <!--Translator View Controller-->
+        <scene sceneID="H4s-AD-Wjn">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="7vC-Gn-1YP" customClass="JJTranslatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mk3-Iq-FEl"/>
+                        <viewControllerLayoutGuide type="bottom" id="RpG-WH-Ajw"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bBX-WG-M5U">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="854"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98561767249999999" green="0.15790427979999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Translation">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5N-oP-cXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="1020"/>
+        </scene>
+        <!--Vocal View Controller-->
+        <scene sceneID="00x-sD-TYK">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PEy-nb-TaL" customClass="JJVocalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IYg-Lb-EHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="FIo-jC-6f4"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kYV-XX-Vbz">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.1919454755167056" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Vocal">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26h-73-lwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jco-Yu-eVV">
+            <objects>
+                <viewController id="Cba-FW-2Cb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9HP-I5-3eL"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wf-js-84K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wIK-g1-ib5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.11684455389338488" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAO-EH-UFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="19"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mmd-D7-XvQ">
+            <objects>
+                <viewController id="d6j-Rn-83r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BUL-kz-QLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="N0T-NK-uuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n92-IS-11B">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.94486578027334855" blue="0.064689091042871238" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq4-5K-rSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="422"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

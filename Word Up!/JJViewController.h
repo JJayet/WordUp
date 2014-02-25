@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JJTranslatorViewController.h"
 
 @interface JJViewController : UIViewController {
     CGFloat reducedSize;

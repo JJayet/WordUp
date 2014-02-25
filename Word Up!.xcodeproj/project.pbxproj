@@ -22,6 +22,8 @@
 		F160CDD818BAB2F3005E22DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F160CDB718BAB2F2005E22DA /* UIKit.framework */; };
 		F160CDE018BAB2F3005E22DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F160CDDE18BAB2F3005E22DA /* InfoPlist.strings */; };
 		F160CDE218BAB2F3005E22DA /* Word_Up_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F160CDE118BAB2F3005E22DA /* Word_Up_Tests.m */; };
+		F179F31318BC1CF600F8E75F /* JJTranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F179F31218BC1CF600F8E75F /* JJTranslatorViewController.m */; };
+		F179F31818BC28F000F8E75F /* JJVocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F179F31718BC28F000F8E75F /* JJVocalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		F160CDDD18BAB2F3005E22DA /* Word Up!Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Word Up!Tests-Info.plist"; sourceTree = "<group>"; };
 		F160CDDF18BAB2F3005E22DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F160CDE118BAB2F3005E22DA /* Word_Up_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Word_Up_Tests.m; sourceTree = "<group>"; };
+		F179F31118BC1CF600F8E75F /* JJTranslatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTranslatorViewController.h; sourceTree = "<group>"; };
+		F179F31218BC1CF600F8E75F /* JJTranslatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTranslatorViewController.m; sourceTree = "<group>"; };
+		F179F31618BC28F000F8E75F /* JJVocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJVocalViewController.h; sourceTree = "<group>"; };
+		F179F31718BC28F000F8E75F /* JJVocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJVocalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 		F160CDB918BAB2F2005E22DA /* Word Up! */ = {
 			isa = PBXGroup;
 			children = (
+				F179F31118BC1CF600F8E75F /* JJTranslatorViewController.h */,
+				F179F31218BC1CF600F8E75F /* JJTranslatorViewController.m */,
+				F179F31618BC28F000F8E75F /* JJVocalViewController.h */,
+				F179F31718BC28F000F8E75F /* JJVocalViewController.m */,
 				F160CDC218BAB2F2005E22DA /* JJAppDelegate.h */,
 				F160CDC318BAB2F2005E22DA /* JJAppDelegate.m */,
 				F160CDC518BAB2F2005E22DA /* Main_iPhone.storyboard */,
@@ -254,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179F31318BC1CF600F8E75F /* JJTranslatorViewController.m in Sources */,
 				F160CDC418BAB2F2005E22DA /* JJAppDelegate.m in Sources */,
 				F160CDCD18BAB2F2005E22DA /* JJViewController.m in Sources */,
 				F160CDC018BAB2F2005E22DA /* main.m in Sources */,
+				F179F31818BC28F000F8E75F /* JJVocalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
